@@ -1,0 +1,13 @@
+<h1 class="text-center mb-4 p-3">Users List</h1>
+
+<div class="container mt-5">
+  <div class="mb-4 d-flex justify-content-center">
+    <input 
+      id="search" 
+      type="text" 
+      [(ngModel)]="searchTerm" 
+      placeholder="Search Users..."
+      class="form-control w-50" 
+    />
+  </div>
+<app-users [users]="filteredUsers"></app-users>
